@@ -17,7 +17,7 @@ Y = dataset.iloc[:,2:3].values
 
 # Fitting Decision Tree Regression Model to the dataset
 from sklearn.ensemble import RandomForestRegressor
-regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
+regressor = RandomForestRegressor(n_estimators = 300, random_state = 0)
 regressor.fit(X, Y)
 
 # Predicting a new result with Decision Tree Regression
